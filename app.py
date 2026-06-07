@@ -6,7 +6,7 @@ import os
 # ---- CONFIG ----
 API_KEY = st.secrets.get("GEMINI_API_KEY", os.environ.get("GEMINI_API_KEY", ""))
 genai.configure(api_key=API_KEY)
-MODEL = "gemini-1.5-flash"  # Free tier model
+MODEL = "gemini-2.0-flash"  # Free tier model
 
 # ---- HELPER: Call Gemini ----
 def call_gemini(system_prompt, user_prompt):
